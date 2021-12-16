@@ -6,6 +6,7 @@ def solution(n, k, cmd):
         table.append(i)
     
     now=k
+    now=k
     for c in cmd:
         if c[0]=='U':
             now-=int(c[2:])
