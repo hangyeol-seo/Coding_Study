@@ -20,4 +20,5 @@ def solution(N, number):
             if number in case_set:
                 return i
             possible_set.append(case_set) 
+            print("d")
     return -1
