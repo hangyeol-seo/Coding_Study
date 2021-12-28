@@ -1,10 +1,11 @@
 import heapq as h
 def solution(n, start, end, roads, traps):
-    start -=1; end -=1;
-    INF = float("inf");
+    start -=1
+    end -=1
+    INF = float("inf")
     graph = [[] for _ in range(n)]
-    trap_dict = {trap-1:idx for idx, trap in enumerate(traps)};
-    nodes = [];
+    trap_dict = {trap-1:idx for idx, trap in enumerate(traps)}
+    nodes = []
     isVisit = [[False]*n for _ in range(1<<len(traps))]
     
     for road in roads:
@@ -15,9 +16,9 @@ def solution(n, start, end, roads, traps):
     h.heappush(nodes,(0,start,0))
     while nodes:
         cur_time, cur_node, state = h.heappop(nodes);
-        if cur_node == end : return cur_time;      
-        if isVisit[state][cur_node] == True: continue;
-        else: isVisit[state][cur_node] = True;
+        if cur_node == end : return cur_time;     
+        if isVisit[state][cur_node] == True: continue
+        else: isVisit[state][cur_node] = True
             
         for next_node, next_cost, road_type in graph[cur_node]:
             next_state = state
