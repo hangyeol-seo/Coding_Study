@@ -12,8 +12,9 @@ def dfs(start,matrix):
                 if next not in visited and matrix[next[1]][next[0]]!='X':
                     if matrix[next[1]][next[0]]=='P':
                         return 0
-                    visited.add(next)
-                    stack.append(next)
+                    else:
+                        visited.add(next)
+                        stack.append(next)
     return 1
 
 def solution(places):
