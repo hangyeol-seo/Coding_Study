@@ -1,6 +1,6 @@
 numsystem='0123456789'
 SDTsystem='SDT'
-opsystem='#*'
+
 def solution(dartResult):
     number=[]
     SDT=[]
