@@ -1,5 +1,6 @@
 def check_block(m,n,board):
     x=[0,1,1]
+    print(x)
     y=[1,0,1]
     result=set()
     for i in range(m-1):
