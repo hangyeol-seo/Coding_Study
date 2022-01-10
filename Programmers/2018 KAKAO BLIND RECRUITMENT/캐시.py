@@ -12,10 +12,10 @@ def solution(cacheSize, cities):
             answer+=5
             cache[city]=0
             if len(cache)>cacheSize:
-                max_city=city
+                target=city
                 for key,value in cache.items():
-                    if value>cache[max_city]:
-                        max_city=key
-                del cache[max_city]
+                    if value>cache[target]:
+                        target=key
+                del cache[target]
 
     return answer
