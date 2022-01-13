@@ -26,7 +26,7 @@ def solution(dartResult):
         elif j=='T':
             array+='**3)'
         if k=='*':
-            if calculate:
+            if calculate!=[]:
                 calculate[-1]+='*2'
             array+='*2'
         elif k=='#':
