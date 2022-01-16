@@ -1,8 +1,8 @@
 def solution(cacheSize, cities):
     answer=0
     cache={}
-    for i in cities:
-        city=i.lower()
+    for c in cities:
+        city=c.lower()
         for key,value in cache.items():
             cache[key]+=1
         if city in cache:
