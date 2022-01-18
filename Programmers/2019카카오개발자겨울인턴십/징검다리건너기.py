@@ -1,5 +1,5 @@
 def solution(stones, k):
-    start,end=0,2*(10**8)
+    start,end=0,2*(10**8)+1
     
     while start<end:
         mid=(start+end)//2
